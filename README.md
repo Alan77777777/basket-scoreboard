@@ -14,7 +14,7 @@
 
 ### Links 
 
-🔗 Live Site URL: [https://basket-scoreboard.app/](https://basket-scoreboard.app/)
+🔗 Live Site URL: [https://basket-score-board.netlify.app/](https://basket-score-board.netlify.app/)
 
 ### Built with 
 
