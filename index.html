@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>BASKETBALL SCORE BOARD </title>
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./icon.ico">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="home">
+                <h3>HOME</h3>
+                <div id="score11" class="score">
+                    <div id="score1">0</div>
+                </div>
+                <div class="addpoints2 points">
+                    <ol>
+                        <li onclick="one()">+1</li>
+                        <li onclick="two()">+2</li>
+                        <li onclick="three()">+3</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="period">
+                <p>PERIOD</p>
+                <input type="number" min="1" max="5" value="1" id="period">
+            </div>
+            <div class="guest">
+                <h3>GUEST</h3>
+                <div id="score22" class="score">
+                    <div id="score2">0</div>
+                </div>
+                <div class="addpoints2 points">
+                    <ol>
+                        <li onclick="one2()">+1</li>
+                        <li onclick="two2()">+2</li>
+                        <li onclick="three2()">+3</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="cronometro">
+            <div class="section">
+                <div class="fauls">
+                    <div class="felement">
+                        <p>FOUL</p>
+                        <div id="faul11" class="faul">
+                            <div id="faul1">0</div>
+                        </div>
+                    </div>
+                    <div class=" points fauli">
+                        <ol>
+                            <li onclick="faul1()">+1</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="time">
+                    <p>TIME</p>
+                    <span class="minutos"></span>:<span class="segundos"></span>:<span class="centesimas"></span>
+                </div>
+                <div class="fauls fauls2">
+                    <div class="points fauli" id="fauli2">
+                        <ol>
+                            <li onclick="faul2()">+1</li>
+                        </ol>
+                    </div>
+                    <div class="felement">
+                        <p>FOUL</p>
+                        <div id="faul11" class="faul">
+                            <div id="faul2">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botones">
+            <button class="newgame" id="boton0">RESTART GAME</button>
+            <button class="newgame" id="save" onclick="save()">SAVE PERIOD</button>
+            <button class="newgame" id="boton1">START GAME</button>
+        </div>
+    </div>
+
+    <div class="periodi">
+        <p>RESULTS: </p>
+        <p id="result"></p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
